@@ -1,0 +1,21 @@
+.container{
+    min-height: 1170px;
+    width: calc(100% - 48px);
+    margin: 0 auto;
+}
+.food-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 48px 0;
+}
+.btn{
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+.food-img{
+    width: 100px;
+    height: 100px;
+}
