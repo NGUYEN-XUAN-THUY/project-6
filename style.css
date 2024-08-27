@@ -55,3 +55,7 @@ body{
 .food-item:hover .food-img {
   transform: scale(2) rotate(45deg);
 }
+
+.hide{
+  display: none;
+}
