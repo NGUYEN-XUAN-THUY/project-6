@@ -1,4 +1,12 @@
 const btn = document.querySelectorAll(".btn");
-btn.addEventListener("click", () => {
-    btn.classList.toggle("active");
-})
+function removeActive() {
+  btn.forEach((even) => {
+    even.classList.remove("active");
+  });
+}
+btn.forEach((item) => {
+  item.addEventListener("click", () => {
+    removeActive();
+    item.classList.add("active");
+  });
+});

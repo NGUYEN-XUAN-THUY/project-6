@@ -1,21 +1,57 @@
-.container{
-    min-height: 1170px;
-    width: calc(100% - 48px);
-    margin: 0 auto;
+body{
+    margin: 0;
+    box-sizing: border-box;
 }
-.food-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 48px 0;
+
+.container {
+  min-width: 1170px;
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  padding: 50px 0;
 }
-.btn{
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 20px;
+.food-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 48px 0;
 }
-.food-img{
-    width: 100px;
-    height: 100px;
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(12, 181, 12);
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: rgb(12, 181, 12);
+  color: white;
+}
+.active {
+  background-color: rgb(12, 181, 12);
+  color: white;
+}
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.food-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+}
+.food-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5s;
+}
+.food-item:hover .food-img {
+  transform: scale(2) rotate(45deg);
 }
