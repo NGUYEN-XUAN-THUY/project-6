@@ -4,8 +4,9 @@ body{
 }
 
 .container {
-  min-width: 1170px;
-  width: calc(100% - 100px);
+  max-width: 1170px;
+  width: calc(100% - 48px);
+  height: 100vh;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -33,7 +34,7 @@ body{
 }
 .food-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 0.5fr);
   gap: 30px;
 }
 .food-item {
@@ -41,8 +42,8 @@ body{
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  width: 300px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   border-radius: 20px;
 }
 .food-img {
